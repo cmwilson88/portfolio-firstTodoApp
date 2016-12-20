@@ -1,0 +1,59 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(to right, turquoise, white);
+}
+
+
+.container {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.row {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	display: table-row;
+}
+
+#header {
+	background: steelblue;
+	color: white;
+}
+
+#header,
+#input,
+.todo,
+.delete {
+	padding: 5px 10px;
+	display: table-cell;
+}
+
+.todo {
+	display: inline-block;
+	max-width: 70%;
+}
+
+input {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.delete {
+	height: 100%;
+	padding: 5%;
+	font-size: .75em;
+	background: rgb(200, 20, 20);
+	color: white;
+	display: inline-block;
+	text-align: center;
+}
+
+.test {
+	display: none;
+}
