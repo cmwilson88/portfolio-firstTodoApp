@@ -5,55 +5,88 @@ body {
 
 body {
 	background: linear-gradient(to right, turquoise, white);
+	font-family: "Avenir", "Montserrat", sans-serif;
 }
 
+.fa-plus {
+	cursor: pointer;
+}
 
 .container {
-	width: 200px;
-	margin: 0 auto;
+	width: 350px;
+	margin: 100px auto auto;
 }
 
-.row {
-	height: 100%;
-	width: 100%;
-	background-color: white;
-	display: table-row;
-}
-
-#header {
+h1 {
 	background: steelblue;
-	color: white;
-}
-
-#header,
-#input,
-.todo,
-.delete {
 	padding: 5px 10px;
-	display: table-cell;
-}
-
-.todo {
-	display: inline-block;
-	max-width: 70%;
+	margin: 0;
+	color: white;
+	font-size: 1.5em;
+	text-transform: uppercase;
 }
 
 input {
 	height: 100%;
 	width: 100%;
 	border: none;
+	box-sizing: border-box;
+	padding: 10px 10px;
+	color: rgb(0, 100, 255);
+	background: rgb(240, 240, 240);
 }
 
-.delete {
-	height: 100%;
-	padding: 5%;
-	font-size: .75em;
-	background: rgb(200, 20, 20);
+input:focus {
+	box-shadow: inset 2px 0px 2px steelblue,
+				inset -2px -2px 2px steelblue;
+	background-color: white;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	font-size: 0.9em;
+	padding-left: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+li:nth-of-type(even) {
+	background: rgb(240, 240, 240);
+}
+
+span {
+	margin: 0;
+	height: 40px;
+	width: 40px;
+	background: red;
 	color: white;
-	display: inline-block;
 	text-align: center;
+	float: left;
+	position: absolute;
+	left: -40px;
+	margin-right: 10px;
+	cursor: pointer;
 }
 
-.test {
-	display: none;
+li:hover span{
+	cursor: pointer;
+	left: 0;
+	transition: 500ms;
+}
+
+li:hover {
+	padding-left: 50px;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: gray;
 }
