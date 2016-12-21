@@ -33,7 +33,7 @@ input {
 	box-sizing: border-box;
 	padding: 10px 10px;
 	color: rgb(0, 100, 255);
-	background: rgb(240, 240, 240);
+	background: rgb(220, 220, 220);
 }
 
 input:focus {
@@ -59,7 +59,7 @@ li {
 }
 
 li:nth-of-type(even) {
-	background: rgb(240, 240, 240);
+	background: rgb(220, 220, 220);
 }
 
 span {
